@@ -10,6 +10,6 @@ updates:
     schedule:
       interval: "daily"
       timezone: Asia/Tokyo
-      time: "15:55"
+      time: "16:02"
     labels:
       - dependencies
