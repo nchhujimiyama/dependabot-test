@@ -10,8 +10,8 @@ updates:
     schedule:
       interval: daily
       timezone: Asia/Tokyo
-      time: "12:51"
+      time: "12:54"
     # open-pull-requests-limit: 5
     labels:
       - dependencies
-    versioning-strategy: lockfile-only
+    # versioning-strategy: lockfile-only
