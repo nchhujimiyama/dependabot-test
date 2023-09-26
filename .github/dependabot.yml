@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: daily
       timezone: Asia/Tokyo
-      time: "13:03"
+      time: "15:50"
     # open-pull-requests-limit: 5
     labels:
       - dependencies
