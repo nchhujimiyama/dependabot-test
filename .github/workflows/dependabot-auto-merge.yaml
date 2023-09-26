@@ -2,12 +2,12 @@
 name: dependabot-auto-merge
 
 #DependaBotで作成されるPRでsecrets.GITHUB_TOKENが読めなくなるので追加
-# permissions:
-#   pull-requests: write
-#   contents: write
-#   actions: write
-#   checks: write
-#   issues: write
+permissions:
+  pull-requests: write
+  contents: write
+  actions: write
+  checks: write
+  issues: write
 
 on:
   pull_request_target:
