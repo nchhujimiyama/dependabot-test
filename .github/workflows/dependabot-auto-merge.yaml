@@ -1,0 +1,30 @@
+#.github/workflows/dependabot-auto-merge.yaml
+name: dependabot-auto-merge
+
+#DependaBotで作成されるPRでsecrets.GITHUB_TOKENが読めなくなるので追加
+permissions:
+  pull-requests: write
+  contents: write
+  actions: write
+  checks: write
+  issues: write
+
+on:
+  pull_request_target:
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1.1.1
+        with:
+          github-token: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Enable auto-merge for Dependabot PRs
+        if: ${{ steps.metadata.outputs.update-type == 'version-update:semver-patch' }}
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
