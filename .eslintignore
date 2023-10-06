@@ -1,0 +1,7 @@
+src/**/*.jpg
+src/**/*.png
+src/**/*.json
+src/**/*.svg
+src/**/*.mp4
+src/gen/graphql.ts
+src/swagger/*
