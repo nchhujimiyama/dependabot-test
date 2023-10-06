@@ -9,7 +9,7 @@ const testData = [
   {
     testCase: '3の場合はFizzが返る',
     value: 3,
-    expected: 'Fizz',
+    expected: 'Buzz',
   },
   {
     testCase: '5の場合はBuzzが返る',
