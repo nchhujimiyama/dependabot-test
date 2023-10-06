@@ -1,34 +1,34 @@
-import { fizzbuzz } from "./fizzbuzz";
+import { fizzbuzz } from './fizzbuzz';
 
 const testData = [
   {
-    testCase: "1の場合は1が返る",
+    testCase: '1の場合は1が返る',
     value: 1,
     expected: 1,
   },
   {
-    testCase: "3の場合はFizzが返る",
+    testCase: '3の場合はFizzが返る',
     value: 3,
-    expected: "Fizz",
+    expected: 'Fizz',
   },
   {
-    testCase: "5の場合はBuzzが返る",
+    testCase: '5の場合はBuzzが返る',
     value: 5,
-    expected: "Buzz",
+    expected: 'Buzz',
   },
   {
-    testCase: "15の場合はFizzBuzzが返る",
+    testCase: '15の場合はFizzBuzzが返る',
     value: 15,
-    expected: "FizzBuzz",
+    expected: 'FizzBuzz',
   },
 ];
 
-describe("FizzBuzz", () => {
+describe('FizzBuzz', () => {
   testData.forEach((v) => {
-    describe("FizzBuzz" + v.value, () => {
+    describe('FizzBuzz' + v.value, () => {
       test(v.testCase, () => {
         const result = fizzbuzz(v.value);
-        // expect(result).toBe(v.expected);
+        expect(result).toBe(v.expected);
       });
     });
   });

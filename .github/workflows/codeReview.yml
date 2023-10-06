@@ -1,0 +1,31 @@
+name: code review
+
+#DependaBotで作成されるPRでsecrets.GITHUB_TOKENが読めなくなるので追加
+permissions:
+  pull-requests: write
+  contents: write
+  actions: write
+  checks: write
+  issues: write
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+jobs:
+  unit-test:
+    name: Unit Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code.
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install --immutable
+      - name: Run Jest Tests
+        run: yarn test
