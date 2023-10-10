@@ -56,7 +56,7 @@
     "@types/styled-components": "^5.1.14",
     "@types/styled-jsx": "^3.4.4",
     "@types/validator": "^13.7.1",
-    "@typescript-eslint/eslint-plugin": "4.31.0",
+    "@typescript-eslint/eslint-plugin": "6.7.5",
     "@typescript-eslint/parser": "4.31.0",
     "apollo-link-rest": "0.8.0",
     "apollo-upload-client": "^17.0.0",
