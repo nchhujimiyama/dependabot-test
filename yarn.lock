@@ -8048,17 +8048,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.9.1":
-  version: 16.18.57
-  resolution: "@types/node@npm:16.18.57"
-  checksum: db21a14416de3abce8dfc30d9e9513c505060ef4d197fdc1b1b7374feca3417a7757172d041989fd49910245e9f2d7869201accac3cceee7c75bfdf8759ead6d
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:^18.17.5":
   version: 18.18.3
   resolution: "@types/node@npm:18.18.3"
   checksum: ed97a832179e0cfbb93738021fe16d0bc5c0f34bea35269c23c9dd5f0ecc8be93dbe5efd51630189a099b31786a47c1bde115508831a7245613a55c3ad1a7d6b
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.8.4":
+  version: 20.8.4
+  resolution: "@types/node@npm:20.8.4"
+  dependencies:
+    undici-types: ~5.25.1
+  checksum: 2106b9ef9750297cac68249428d7067c4d22c26908854165b70a164e34e900f4c34bb9bf3887c9391206b500d3e87171d03b1846e25788925236a0354390d278
   languageName: node
   linkType: hard
 
@@ -13076,7 +13078,7 @@ __metadata:
     "@types/jest": ^27.0.1
     "@types/lodash": ^4.14.172
     "@types/memoize-one": ^5.1.2
-    "@types/node": ^16.9.1
+    "@types/node": ^20.8.4
     "@types/react": ^17.0.0
     "@types/react-copy-to-clipboard": ^5.0.1
     "@types/react-datepicker": ^4.1.6
@@ -27933,6 +27935,13 @@ __metadata:
   version: 1.12.1
   resolution: "underscore@npm:1.12.1"
   checksum: ec327603aa112b99fe9d74cd9bf3b3b7451465a9d2610ceab269a532e3f191650ab017903be34dc86fe406a11d04d8905a3b04dd4c129493e51bee09a3f3074c
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.25.1":
+  version: 5.25.3
+  resolution: "undici-types@npm:5.25.3"
+  checksum: ec9d2cc36520cbd9fbe3b3b6c682a87fe5be214699e1f57d1e3d9a2cb5be422e62735f06e0067dc325fd3dd7404c697e4d479f9147dc8a804e049e29f357f2ff
   languageName: node
   linkType: hard
 
