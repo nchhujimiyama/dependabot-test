@@ -4337,24 +4337,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@date-io/core@npm:^2.11.0":
+"@date-io/core@npm:^2.17.0":
   version: 2.17.0
   resolution: "@date-io/core@npm:2.17.0"
   checksum: 008dfc79eb54256805113d76feca82fe0b08a245ecbfb2d53809e6a129dc201f9dbd053c8ad63512203ab1a13ff7f76de0edc31829588ef507d53307974c29a8
   languageName: node
   linkType: hard
 
-"@date-io/date-fns@npm:2.11.0":
-  version: 2.11.0
-  resolution: "@date-io/date-fns@npm:2.11.0"
+"@date-io/date-fns@npm:2.17.0":
+  version: 2.17.0
+  resolution: "@date-io/date-fns@npm:2.17.0"
   dependencies:
-    "@date-io/core": ^2.11.0
+    "@date-io/core": ^2.17.0
   peerDependencies:
     date-fns: ^2.0.0
   peerDependenciesMeta:
     date-fns:
       optional: true
-  checksum: cdab6e3836c69b3d81a43afb6fe082feb29edd55923422f821c4bf7aa8dbdcee890fa5b7e85a133403196f942e0ca5eb14707413e768a0abb05d7a819dbbfd95
+  checksum: bfab634c985a98dd44fdfc5f982b0348da2886c9ad79a8d71fd7bfa05b740af7f5cf340508cd7ce51d67c141fb8766998c8efdf50653252c68ec078471cd76e6
   languageName: node
   linkType: hard
 
@@ -13037,7 +13037,7 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.4.16
     "@apollo/react-hooks": ^4.0.0
-    "@date-io/date-fns": 2.11.0
+    "@date-io/date-fns": 2.17.0
     "@firebase/remote-config": ^0.2.0
     "@floating-ui/react": ^0.15.1
     "@fortawesome/fontawesome-svg-core": ^6.2.1
