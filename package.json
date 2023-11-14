@@ -176,7 +176,7 @@
     "graphql-faker": "^2.0.0-rc.25",
     "husky": "^7.0.2",
     "lint-staged": "^12.1.7",
-    "prettier": "^2.5.1"
+    "prettier": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
