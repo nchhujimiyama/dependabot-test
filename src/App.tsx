@@ -2,7 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import { Markdown } from './common/Markdown';
+import markdownFile from './articles/test.md';
+
+const App: React.FC = () => {
+  const [mdText, setMdText] = React.useState('');
+
+  React.useEffect(() => {
+    fetch(markdownFile)
+      .then((m) => {
+        return m.text();
+      })
+      .then((md) => {
+        setMdText(md);
+      });
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,8 +34,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Markdown content={mdText} />
     </div>
   );
-}
+};
 
 export default App;
