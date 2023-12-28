@@ -61,7 +61,7 @@
     "apollo-link-rest": "0.8.0",
     "apollo-upload-client": "^17.0.0",
     "aws-amplify": "^4.2.8",
-    "axios": "^0.24.0",
+    "axios": "^1.6.3",
     "camelcase": "^6.3.0",
     "caniuse-lite": "^1.0.30001431",
     "constate": "^3.3.0",
